@@ -1,0 +1,7 @@
+.env
+Ai_Agent/
+my_game.py
+*.pdf
+__pycache__/
+.venv/
+venv/
