@@ -13,11 +13,14 @@ not just complete tutorials, but build real, working systems.
 - Built `temp_converter.py` — a CLI script that converts Celsius to Fahrenheit
 - First public commit and push
 
+### Day 2
+- Added conditionals, while loop menu, and functions to `temp_converter.py`
+
 ## Projects
 
 | Project | Description | Status |
 |---|---|---|
-| `temp_converter.py` | Celsius → Fahrenheit CLI converter | ✅ Done |
+| `temp_converter.py` | CLI tool that converts temperatures both ways (Celsius↔Fahrenheit) via a menu loop, using functions | ✅ Done |
 
 ## Stack
 - Python 3
