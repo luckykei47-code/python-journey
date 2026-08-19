@@ -12,6 +12,8 @@ not just complete tutorials, but build real, working systems.
 - Set up Python, VS Code, and git/GitHub from scratch
 - Built `temp_converter.py` — a CLI script that converts Celsius to Fahrenheit
 - First public commit and push
+### Day 2
+- Added conditionals, a while loop menu, and functions to `temp_converter.py`
 
 ## Projects
 
