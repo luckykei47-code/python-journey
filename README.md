@@ -14,6 +14,8 @@ not just complete tutorials, but build real, working systems.
 - First public commit and push
 ### Day 2
 - Added conditionals, a while loop menu, and functions to `temp_converter.py`
+- Added conversion history tracking using a list of dictionaries and a for loop
+- Numbered history entries, rounded inputs to 2 decimals, handled empty-history case
 
 ## Projects
 
