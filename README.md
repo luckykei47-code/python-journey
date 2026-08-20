@@ -16,6 +16,8 @@ not just complete tutorials, but build real, working systems.
 - Added conditionals, a while loop menu, and functions to `temp_converter.py`
 - Added conversion history tracking using a list of dictionaries and a for loop
 - Numbered history entries, rounded inputs to 2 decimals, handled empty-history case
+### Day 3
+- Added error handling with try/except for all inputs, plus valid-range checks
 
 ## Projects
 
