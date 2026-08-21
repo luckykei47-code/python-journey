@@ -85,7 +85,7 @@ class TemparatureConverter:
                 if not self.history:
                     print(f"\nNothing in history yet {self.name}.\n")
                 else:
-                    for index,entry in enumerate(self.history, start = 1):
+                    for index, entry in enumerate(self.history, start = 1):
                         print(f"({index}). Changed your temparature from {entry['from']} :  {entry['input']:.2f} to {entry['to']} : {entry['result']:.2f}\n")
 
             while True:
