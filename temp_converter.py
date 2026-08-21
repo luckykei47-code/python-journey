@@ -1,9 +1,15 @@
+import json
+
 print("Temparature converter from celsius to fahrenheit\n")
 
 class TemparatureConverter:
     def __init__(self, name):
         self.name = name
-        self.history = []
+        try:
+            with open("history.json", "r") as file:
+                self.history = json.load(file)
+        except (FileNotFoundError,json.JSONDecodeError):
+            self.history = []
 
 
 
@@ -14,6 +20,11 @@ class TemparatureConverter:
     def fahrenheit_to_celsius(self, fahrenheit):
         celsius = ((fahrenheit-32)*5/9)
         return celsius
+
+
+    def save_history(self):
+        with open("history.json", "w")as file:
+           json.dump(self.history, file)
 
 
     def run(self):
@@ -53,6 +64,8 @@ class TemparatureConverter:
                 result = self.celsius_to_fahrenheit(celsius)
                 print(f"\n{self.name} the temparature is changed from {celsius:.2f} to {result:.2f} Fahrenheit.\n")
                 self.history.append({"from" : "Celsius", "input" : celsius, "to" : "Fahrenheit", "result": result})
+                self.save_file()
+
             elif choice == 2:
                 while True:
                     try:
@@ -66,6 +79,8 @@ class TemparatureConverter:
                 result = self.fahrenheit_to_celsius(fahrenheit)
                 print(f"\n{self.name} the temparature is changed from {fahrenheit:.2f} to {result:.2f} Celsius.\n")
                 self.history.append({"from" : "Fahrenheit", "input": fahrenheit, "to" : "celsius", "result" : result})
+                self.save_history()
+
             elif choice == 3:
                 if not self.history:
                     print(f"\nNothing in history yet {self.name}.\n")
@@ -73,8 +88,6 @@ class TemparatureConverter:
                     for index,entry in enumerate(self.history, start = 1):
                         print(f"({index}). Changed your temparature from {entry['from']} :  {entry['input']:.2f} to {entry['to']} : {entry['result']:.2f}\n")
 
-            
-            
             while True:
                 answer = input("To Continue type \"y\". \nTo quit type \"q\". : ")
                 if answer in ("y", "q"):
