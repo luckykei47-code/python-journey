@@ -18,6 +18,8 @@ not just complete tutorials, but build real, working systems.
 - Numbered history entries, rounded inputs to 2 decimals, handled empty-history case
 ### Day 3
 - Added error handling with try/except for all inputs, plus valid-range checks
+### Day 4
+- Refactored temp_converter.py into a class-based structure (OOP)
 
 ## Projects
 
