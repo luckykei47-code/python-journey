@@ -20,6 +20,9 @@ not just complete tutorials, but build real, working systems.
 - Added error handling with try/except for all inputs, plus valid-range checks
 ### Day 4
 - Refactored temp_converter.py into a class-based structure (OOP)
+### Day 5
+- Added persistence: history now saves/loads from history.json using json.dump/load
+- Fixed a bug where a duplicated save block used the wrong filename, silently dropping Fahrenheit history on restart
 
 ## Projects
 
