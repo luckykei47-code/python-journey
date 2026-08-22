@@ -1,6 +1,7 @@
 import json
 
-print("Temparature converter from celsius to fahrenheit\n")
+if __name__ == "__main__":
+    print("Temparature converter between celsius and fahrenheit\n")
 
 class TemparatureConverter:
     def __init__(self, name):
@@ -101,6 +102,7 @@ class TemparatureConverter:
 
         print(f"Thank you {self.name} for using me to Convert your temparatures")
 
-name = input("What's your name? ")
-converter = TemparatureConverter(name)
-converter.run()
+if __name__ == "__main__":
+    name = input("What's your name? ")
+    converter = TemparatureConverter(name)
+    converter.run()
