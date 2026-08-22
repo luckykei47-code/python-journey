@@ -23,6 +23,9 @@ not just complete tutorials, but build real, working systems.
 ### Day 5
 - Added persistence: history now saves/loads from history.json using json.dump/load
 - Fixed a bug where a duplicated save block used the wrong filename, silently dropping Fahrenheit history on restart
+## Day 5
+- Added pytest suite with 4 tests covering both conversion directions, including a hand-calculated case
+- Fixed __name__ == "__main__" guard so importing the file for tests doesn't trigger input()/print()
 
 ## Projects
 
