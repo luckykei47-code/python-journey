@@ -36,3 +36,10 @@ not just complete tutorials, but build real, working systems.
 ## Stack
 - Python 3
 - (More added as the journey progresses: FastAPI, SQLite, etc.)
+
+### Phase 2 — FastAPI REST API
+
+- Built first FastAPI app with GET (path + query params) and POST endpoints
+- Pydantic model validation on incoming request bodies
+- In-memory storage with full JSON persistence (survives server restarts)
+- Auto-generated Swagger UI docs at /docs
