@@ -43,3 +43,7 @@ not just complete tutorials, but build real, working systems.
 - Pydantic model validation on incoming request bodies
 - In-memory storage with full JSON persistence (survives server restarts)
 - Auto-generated Swagger UI docs at /docs
+
+- Added full CRUD: GET by ID, PUT (partial update), DELETE
+- UUID-based identification for all resources
+- SaleUpdate model with all-optional fields for partial updates
