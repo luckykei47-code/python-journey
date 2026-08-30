@@ -47,3 +47,6 @@ not just complete tutorials, but build real, working systems.
 - Added full CRUD: GET by ID, PUT (partial update), DELETE
 - UUID-based identification for all resources
 - SaleUpdate model with all-optional fields for partial updates
+
+- Added proper HTTP status codes: 201 for POST, 204 for DELETE, 404 for not found
+- HTTPException for clean error responses
