@@ -5,3 +5,4 @@ my_game.py
 __pycache__/
 .venv/
 venv/
+sales.db
