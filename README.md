@@ -50,3 +50,13 @@ not just complete tutorials, but build real, working systems.
 
 - Added proper HTTP status codes: 201 for POST, 204 for DELETE, 404 for not found
 - HTTPException for clean error responses
+
+### Phase 3 — Database Integration
+- Replaced JSON file persistence with SQLite via SQLAlchemy ORM
+- SaleModel mapped to a real database table
+- Dependency injection pattern (get_db) for session management
+- Full CRUD now database-backed and persistent across restarts
+
+## Live API
+Base URL: `https://python-journey-api.onrender.com`
+Interactive docs: `https://python-journey-api.onrender.com/docs`
